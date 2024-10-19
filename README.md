@@ -1,11 +1,11 @@
-## SNEK 
+## SNEK
 
 ## 🐍 Watch the snake eat up my contributions!
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dist/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="dist/github-ocean.gif" />
-  <img alt="github-snake" src="dist/github-snake.svg" />
+  <img alt="" role="presentation" src="dist/github-snake.svg" style="display: none;" />
 </picture>
 
 ## 🌊 Animated Snake GIF

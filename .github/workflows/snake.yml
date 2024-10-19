@@ -13,13 +13,15 @@ jobs:
       - name: Generate Snake Game SVG and GIF
         uses: Platane/snk@v3.2.0
         with:
-          github_user_name: 'Exios66'  # Use username directly as a string
+          github_user_name: 'Exios66'
           output: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
       - name: Commit and Push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Add GITHUB_TOKEN here
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'

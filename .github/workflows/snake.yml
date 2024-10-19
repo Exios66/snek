@@ -10,11 +10,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       
-      - name: Generate Snake Game SVG
+      - name: Generate Snake Game SVG and GIF
         uses: Platane/snk@v3.2.0
         with:
-          github_user_name: ${{ Exios66 }}
-          outputs: |
+          github_user_name: 'Exios66'  # Use username directly as a string
+          output: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
